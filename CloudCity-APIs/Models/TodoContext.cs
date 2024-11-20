@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using CloudCity_APIs.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace TodoApi.Models;
 
@@ -10,4 +11,5 @@ public class TodoContext : DbContext
     }
 
     public DbSet<TodoItem> TodoItems { get; set; } = null!;
+    public DbSet<User> Users { get; set; } = null!;
 }
