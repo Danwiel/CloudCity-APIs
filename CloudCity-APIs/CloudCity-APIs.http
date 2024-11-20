@@ -1,6 +1,6 @@
 @CloudCity_APIs_HostAddress = http://localhost:5151
 
-GET {{CloudCity_APIs_HostAddress}}/weatherforecast/
+GET {{CloudCity_APIs_HostAddress}}/
 Accept: application/json
 
 ###

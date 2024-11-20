@@ -6,14 +6,14 @@ namespace CloudCity_APIs.Models
     {
         public int Id { get; set; }
 
-        [Required]
-        public string FullName { get; set; }
+        [Required(ErrorMessage = "parameter must not be empty")]
+        public string UserFullName { get; set; }
 
-        [Required]
+        [Required(ErrorMessage = "parameter must not be empty")]
         [EmailAddress]
-        public string Email { get; set; }
+        public string UserEmail { get; set; }
 
-        [Required]
-        public string Password { get; set; }
+        [Required(ErrorMessage = "parameter must not be empty")]
+        public string UserPassword { get; set; }
     }
 }
